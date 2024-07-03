@@ -18,7 +18,7 @@ async function getData() {
 
     // Database name where you want to store data
     let db = result.db(D_name);
-    let collection = db.collection("users");
+    let collection = db.collection("project");
 
     // in user we featch all user and print the all user 
     let users = await collection.find({}).toArray();
